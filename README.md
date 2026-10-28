@@ -2,7 +2,7 @@
 
 # Aquea
 
-**A role-based marketplace and community platform where dealers post deals, freelancers bid on them, and hosts run ticketed events.**
+**a role-based marketplace and community platform where dealers post deals, freelancers bid on them, and hosts run ticketed events.**
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-aquea.netlify.app-558467?style=for-the-badge&logo=netlify&logoColor=white)](https://aquea.netlify.app)
 
