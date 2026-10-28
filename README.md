@@ -80,7 +80,7 @@ Want to see what each role can do? The repo includes ready-to-use **dealer** and
 ### 🔐 Authentication and roles
 - Email and password sign-up and login via Supabase Auth
 - Protected routes, with a session-aware layout
-- Five roles: `admin`, `host`, `dealer`, `advertiser`, `user`
+- Five roles: `admin`, `host`, `dealer`, `user`
 
 | Role | What they can do |
 | --- | --- |
