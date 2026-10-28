@@ -30,6 +30,23 @@ Everything is gated by **user roles**, backed by **Supabase** (auth, Postgres an
 
 ---
 
+## 🔑 Demo accounts
+
+Want to see what each role can do? The repo includes ready-to-use **dealer** and **host** accounts so you can log in and explore without signing up.
+
+1. Open the file **`dealer and host users information.txt`** in the [`public`](./public) folder of this repo.
+2. Copy an email and password from it.
+3. Go to the [login page](https://aquea.netlify.app/login) and sign in.
+
+| Log in as | What you can try |
+| --- | --- |
+| **Dealer** | Post a new deal, review incoming proposals on **Manage Proposals**, accept or reject bids, bid on other dealers' deals |
+| **Host** | Create events, view them on the events page, buy tickets for other hosts' events |
+
+> These are demo accounts for testing only. Please don't change their passwords or post inappropriate content.
+
+---
+
 ## 🚀 Features
 
 ### 🤝 Deals and proposals
