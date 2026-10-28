@@ -220,6 +220,6 @@ Contributions, issues and feature requests are welcome. Feel free to open an iss
 ## 📬 Contact
 
 **Ata Forouzesh** 
-[GitHub](https://github.com/AtaForouzesh) · [Email](sinafroozesh@gmail.com)
+[GitHub](https://github.com/AtaForouzesh) · Email: sinafroozesh@gmail.com
 
 If you like this project, a ⭐ on the repo is much appreciated.
