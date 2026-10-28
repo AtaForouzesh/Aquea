@@ -87,7 +87,6 @@ const UsersTable = () => {
               <option value="admin">Admin</option>
               <option value="host">Host</option>
               <option value="dealer">Dealer</option>
-              <option value="advertiser">Advertiser</option>
               <option value="user">User</option>
             </Select>
           </SelectGroup>

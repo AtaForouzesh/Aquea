@@ -8,7 +8,7 @@ export const useCreateTicket = () => {
     mutationFn: (eventId) => createTicketApi(eventId),
     onSuccess: () => {
       toast.success("Ticket created successfully");
-      queryClient.invalidateQueries(["tickets"]);
+      queryClient.invalidateQueries({ queryKey: "tickets" });
     },
     onError: (error) => {
       toast.error(error.message);

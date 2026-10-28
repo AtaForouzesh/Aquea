@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Headings from "../../Components/Headings";
 import { useNavigate } from "react-router-dom";
+import { useUser } from "../Users/useUser";
 
 const StyledList = styled.li`
   padding: 0;
@@ -66,6 +67,8 @@ const Button = styled.button`
 `;
 
 const DealsItem = ({ data }) => {
+  const { user } = useUser();
+  const isOwnDealer = user?.id === data?.dealer_id;
   const navigate = useNavigate();
   return (
     <StyledList>
@@ -103,7 +106,7 @@ const DealsItem = ({ data }) => {
             </p>
           </StyledDescription>
         </div>
-        <div
+        <divs
           style={{
             display: "flex",
             flexDirection: "column",
@@ -127,14 +130,25 @@ const DealsItem = ({ data }) => {
             <span>Estimated Time: </span>
             <span>{data.expected_duration}</span>
           </div>
-          <Button
-            onClick={() => {
-              navigate(`/deals/${data.id}`);
-            }}
-          >
-            View Details And Submit Proposal
-          </Button>
-        </div>
+          {isOwnDealer ? (
+            <Button
+              onClick={() => {
+                navigate(`/deals/${data.id}`);
+              }}
+              style={{ width: "430px" }}
+            >
+              View Details
+            </Button>
+          ) : (
+            <Button
+              onClick={() => {
+                navigate(`/deals/${data.id}`);
+              }}
+            >
+              View Details And Submit Proposal
+            </Button>
+          )}
+        </divs>
       </div>
     </StyledList>
   );

@@ -1,7 +1,7 @@
 import { createContext, useContext, useState } from "react";
 import { HiEllipsisVertical } from "react-icons/hi2";
 import styled from "styled-components";
-import { useOutsideClick } from "../../../../the-wild-oasis/src/hooks/useOutsideClick";
+import { useOutsideClicks } from "../hooks/useOutsideClicks";
 
 const StyledMenu = styled.div`
   display: flex;
@@ -95,7 +95,7 @@ const Toggle = ({ id }) => {
 
 const List = ({ id, children }) => {
   const { openId, close, position } = useContext(menusContext);
-  const ref = useOutsideClick(close);
+  const ref = useOutsideClicks(close);
   if (openId !== id) {
     return null;
   }

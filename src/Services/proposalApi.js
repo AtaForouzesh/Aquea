@@ -99,7 +99,7 @@ export const getDealerProposals = async () => {
   const { data, error } = await supabase
     .from("proposals")
     .select(
-      "*, profiles(full_name, avatar, role), deals(id, dealer_id, title, expected_duration)",
+      "*, profiles(full_name, avatar, role), deals!inner(id, dealer_id, title, expected_duration)",
     )
     .eq("deals.dealer_id", userId)
     .order("created_at", { ascending: false });

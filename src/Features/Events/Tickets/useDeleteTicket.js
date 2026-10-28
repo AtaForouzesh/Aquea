@@ -8,7 +8,7 @@ export const useDeleteTicket = () => {
     mutationFn: (ticketId) => deleteTicketApi(ticketId),
     onSuccess: () => {
       toast.success("Ticket deleted successfully");
-      queryClient.invalidateQueries(["tickets"]);
+      queryClient.invalidateQueries({ queryKey: "tickets" });
     },
     onError: (error) => {
       toast.error(error.message);

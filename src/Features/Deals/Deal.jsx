@@ -7,6 +7,7 @@ import Modal from "../../ui/Modal";
 import { HiArrowLeft } from "react-icons/hi2";
 import { useCheckProposal } from "./Proposals/useCheckProposal";
 import CommentsSection from "../Comments/CommentsSection";
+import { useUser } from "../Users/useUser";
 
 const DealContainer = styled.div`
   display: flex;
@@ -78,6 +79,8 @@ const Deal = () => {
   const { id } = useParams();
   const { deal, isLoadingDeal } = useDeal(id);
   const { hasSubmittedProposal, isCheckingProposal } = useCheckProposal(id);
+  const { user } = useUser();
+  const isOwnDealer = user?.id === deal?.dealer_id;
 
   const navigate = useNavigate();
 
@@ -157,7 +160,19 @@ const Deal = () => {
             <span>Estimated Time: </span>
             <span>{deal.expected_duration}</span>
           </div>
-          {!hasSubmittedProposal ? (
+          {isOwnDealer ? (
+            <Button
+              style={{
+                backgroundColor: "#4b1426",
+                cursor: "not-allowed",
+                fontSize: "20px",
+                width: "430px",
+              }}
+              disabled
+            >
+              You can't submit a proposal to your own deal
+            </Button>
+          ) : !hasSubmittedProposal ? (
             <Modal>
               <Modal.Open opens="proposal-form">
                 <Button>Submit Proposal</Button>

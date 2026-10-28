@@ -7,6 +7,7 @@ import { getEventStatus } from "../../Utils/Helper";
 import { useCheckTicket } from "./Tickets/useCheckTicket";
 import { useCreateTicket } from "./Tickets/useCreateTicket";
 import CommentsSection from "../Comments/CommentsSection";
+import { useUser } from "../Users/useUser";
 
 const EventContainer = styled.div`
   display: flex;
@@ -109,9 +110,11 @@ const Button = styled.button`
 const Event = () => {
   const { id } = useParams();
   const { event, isLoadingEvent } = useEvent(id);
+  const { user } = useUser();
   const navigate = useNavigate();
   const { hasBoughtTicket, isCheckingTicket } = useCheckTicket(id);
   const { createTicket, isCreatingTicket } = useCreateTicket();
+  const isOwnHost = user?.id === event?.host_id;
 
   if (isLoadingEvent || isCheckingTicket) {
     return (
@@ -191,7 +194,18 @@ const Event = () => {
           >
             {event.description}
           </span>
-          {hasBoughtTicket ? (
+          {isOwnHost ? (
+            <Button
+              style={{
+                backgroundColor: "#4b1426",
+                cursor: "not-allowed",
+                width: "430px",
+              }}
+              disabled
+            >
+              You can't buy a ticket for your own event
+            </Button>
+          ) : hasBoughtTicket ? (
             <Button
               onClick={() => {
                 navigate("/tickets");

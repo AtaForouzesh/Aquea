@@ -1,9 +1,0 @@
-1. Main Page & FilteringDealsPage.jsx: The main parent container that manages page state (filter inputs, active modals) and renders the top header, filter bar, and grid of deal cards.DealsFilter.jsx: The filter toolbar containing budget range inputs ($Min to$ Max) and interactive skill tag filter pills.
-
-2. Project Card DisplayDealCard.jsx: The individual deal card displaying the title, dealer name, price badge, expected duration, required skill tags, proposal count, truncated description with "Show More", and action buttons.
-
-3. User Bidding & Proposal ManagementSendProposalModal.jsx: The submission form modal where applicants input their bid price ($), estimated delivery time, pitch/description, and attach an optional file (resume/portfolio).UserProposalTrackerModal.jsx: A drawer/modal where applicants view all proposals they have submitted across projects and track their live status (Pending, Under Review, Accepted, Rejected).
-
-4. Dealer Project ManagementCreateDealForm.jsx: The form modal allowing dealers to post new projects with title, budget range, duration, required skills, and full description.DealerProposalManagerModal.jsx: The management panel where a dealer can view all incoming bids for a specific project, download applicant attachments, and accept or reject candidates.
-
-5. Details & Public DiscussionDealDetailsModal.jsx: The full project view displaying all deal details, full description, and candidate guidelines.DealCommentsSection.jsx: The public Q&A thread component embedded inside the details modal where users can ask clarifying questions before bidding.

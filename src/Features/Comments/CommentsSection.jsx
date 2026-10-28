@@ -77,7 +77,7 @@ const CommentsSection = ({ eventId, dealId }) => {
           <Input
             as="textarea"
             id="content"
-            placeholder="Please enter your comments here..."
+            placeholder="Please share your thoughts here..."
             {...register("content", {
               required: "Comment is required",
             })}

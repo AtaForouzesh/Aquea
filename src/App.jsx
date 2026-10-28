@@ -17,7 +17,7 @@ import Proposals from "./Features/Deals/Proposals/Proposals";
 import Event from "./Features/Events/Event";
 import CreateEvent from "./Features/Events/CreateEvent";
 import Tickets from "./Features/Events/Tickets/Tickets";
-import ManageSubmittedProposals from "./Features/Deals/Proposals/SubmittedProposals/manageSubmittedProposals";
+import ManageSubmittedProposals from "./Features/Deals/Proposals/SubmittedProposals/ManageSubmittedProposals";
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {

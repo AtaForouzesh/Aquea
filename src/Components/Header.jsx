@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Search from "./Search";
 import Headings from "./Headings";
 import { useLogout, useUser } from "../Authentication/useAuth";
 import { HiOutlineLogout, HiOutlineUser } from "react-icons/hi";
@@ -26,7 +25,7 @@ const UserAvatar = styled.div`
   gap: 20px;
   font-weight: 500;
   font-size: 24px;
-  color: "#374151" & img {
+  color: #374151 & img {
     display: block;
     width: 64px;
     aspect-ratio: 3/ 3;
@@ -61,15 +60,14 @@ const Header = () => {
   return (
     <StyledHeader>
       <Headings as="h1">AQUEA</Headings>
-      <Search />
-      <div style={{ display: "flex", gap: "0.6rem", alignItems: "center" }}>
+      <div style={{ display: "flex", gap: "10px", alignItems: "center" }}>
         <UserAvatar>
           {avatar ? (
             <img src={avatar} alt={full_name} />
           ) : (
-            <HiOutlineUser style={{ width: "2.4rem", height: "2.4rem" }} />
+            <HiOutlineUser style={{ width: "38px", height: "38px" }} />
           )}
-          <spand style={{ textTransform: "capitalize" }}>{full_name}</spand>
+          <span style={{ textTransform: "capitalize" }}>{full_name}</span>
         </UserAvatar>
         <ButtonIcon disabled={isLoggingOut} onClick={() => logout()}>
           <HiOutlineLogout />

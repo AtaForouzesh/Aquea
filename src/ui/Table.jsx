@@ -23,7 +23,7 @@ const TableHeader = styled(CommonRow)`
   color: #efeabb;
   & > div {
     &:not(:last-child) {
-      border-right: 2px solid #e5e7eb;
+      border-right: 2px solid #efeabb;
     }
   }
 `;
@@ -32,7 +32,7 @@ const StyledRow = styled(CommonRow)`
   margin: 0 20px;
 
   &:not(:last-child) {
-    border-bottom: 1px solid #e5e7eb;
+    border-bottom: 1px solid #efeabb;
   }
 `;
 

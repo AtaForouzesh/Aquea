@@ -42,7 +42,7 @@ const EventsButton = styled.button`
 
 const EventsHeader = () => {
   const navigate = useNavigate();
-  const { role, isloading } = useUser();
+  const { role, isLoading } = useUser();
   const isHost = role === "host";
   const { ticketsLength } = useTickets();
 
@@ -52,7 +52,7 @@ const EventsHeader = () => {
         Events
       </Headings>
       <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-        {!isloading && isHost && (
+        {!isLoading && isHost && (
           <Button
             onClick={() => {
               navigate("/events/new");

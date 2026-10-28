@@ -8,7 +8,9 @@ export const useCreateComment = ({ eventId, dealId }) => {
     mutationFn: ({ content }) => createCommentApi({ content, dealId, eventId }),
     onSuccess: () => {
       toast.success("Comment Created Successfully");
-      queryClient.invalidateQueries(["comments", { dealId, eventId }]);
+      queryClient.invalidateQueries({
+        queryKey: ["comments", { dealId, eventId }],
+      });
     },
     onError: (error) => {
       toast.error(error.message);

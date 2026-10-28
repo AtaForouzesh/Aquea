@@ -27,7 +27,7 @@ const StatusBadge = styled.div`
         ? "rgba(85, 126, 132, 0.3)"
         : "#558467"};
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 400;
   color: ${(props) => (props.$status === "pending" ? "#73c6d2" : "#efeabb")};
   border: ${(props) =>
     props.$status === "pending" ? "1px solid #73c6d2" : "none"};
@@ -60,7 +60,10 @@ const ViewDealButton = styled.button`
 const ProposalListItem = ({ proposal }) => {
   const navigate = useNavigate();
 
-  const proposalCreateDate = proposal.created_at;
+  const proposalCreateDate = new Date(proposal.created_at).toLocaleString([], {
+    dateStyle: "medium",
+    timeStyle: "medium",
+  });
   const deal = proposal.deals;
   const dealTitle = deal?.title || "Deal Title Unavailable";
   const dealId = proposal.deal_id;
@@ -76,7 +79,7 @@ const ProposalListItem = ({ proposal }) => {
           {dealTitle}
         </Headings>
         <div>
-          <span style={{ color: "#efeabb" }}>
+          <span style={{ color: "#efeabb", fontSize: "20px" }}>
             Submitted on: {proposalCreateDate}
           </span>
           <StatusBadge $status={status}>{status}</StatusBadge>
