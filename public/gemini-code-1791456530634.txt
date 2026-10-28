@@ -1,0 +1,18 @@
++---------------------------------------------------------------------------------+
+| SUBMIT PROPOSAL FOR: "Build a Full-Stack React & Supabase Dashboard"            |
++---------------------------------------------------------------------------------+
+|                                                                                 |
+|  Your Bid Price ($):                         Expected Delivery Time:            |
+|  [ $ 120                      ]              [ 5 Days                         ] |
+|                                                                                 |
+|  Proposal Pitch / Description:                                                  |
+|  +---------------------------------------------------------------------------+  |
+|  | I have 3+ years of experience with React & Supabase. I can deliver this   |  |
+|  | dashboard with full authorization and real-time database capabilities.    |  |
+|  +---------------------------------------------------------------------------+  |
+|                                                                                 |
+|  Attach Portfolio / Resume / Proposal File (Optional):                          |
+|  [ 📎 Choose File ] portfolio-resume.pdf                                       |
+|                                                                                 |
+|                                                   [ Cancel ]  [ Submit Proposal ]|
++---------------------------------------------------------------------------------+

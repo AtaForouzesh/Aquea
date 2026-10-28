@@ -1,0 +1,42 @@
+=====================================================================================================
+  AQUEA  |  [ Search...                     ]                                      (👤 rev  🚪)
+=====================================================================================================
+  [🏠 Dashboard   ] |
+  [💼 Deals / Bids] |  Deals Marketplace                           [+ Post New Deal]  [My Proposals (2)]
+  [📣 Advertisers ] | -----------------------------------------------------------------------------------
+  [👥 Users       ] |  FILTER DEALS BY:
+  [🎙️ Hosts       ] |  Budget Range ($): [ Min: 30 ] to [ Max: 250 ]   
+                    |  Skills: [ All ] [ React ] [ UI/UX ] [ Python ] [ Graphic Design ] [ Mobile App ]
+                    | -----------------------------------------------------------------------------------
+                    |
+                    |  +------------------------------------------------------------------------------+
+                    |  | Build a Full-Stack React & Supabase Dashboard              [$50 - $200]      |
+                    |  | Posted by: Alex Rivers (Dealer)                                              |
+                    |  |                                                                              |
+                    |  | ⏱️ Est. Time Needed: 1-2 Weeks   |   📄 5 Bids Submitted                      |
+                    |  |                                                                              |
+                    |  | 🏷️ Required Skills: [ React ] [ Supabase ] [ Tailwind CSS ]                 |
+                    |  |                                                                              |
+                    |  | Description:                                                                 |
+                    |  | Looking for a skilled developer to build an interactive dashboard with       |
+                    |  | real-time updates and proposal submission forms... [Show More]               |
+                    |  |                                                                              |
+                    |  | [ View Project Details & Public Q&A ]              [ 📩 Send Proposal ]     |
+                    |  +------------------------------------------------------------------------------+
+                    |
+                    |  +------------------------------------------------------------------------------+
+                    |  | UI/UX Redesign for E-Commerce App                        [$100 - $350]     |
+                    |  | Posted by: Sarah Jenkins (Dealer)                                            |
+                    |  |                                                                              |
+                    |  | ⏱️ Est. Time Needed: 3-5 Days    |   📄 12 Bids Submitted                     |
+                    |  |                                                                              |
+                    |  | 🏷️ Required Skills: [ Figma ] [ UI/UX ] [ Mobile App ]                      |
+                    |  |                                                                              |
+                    |  | Description:                                                                 |
+                    |  | We need a modern, clean Figma design for our mobile shopping application.    |
+                    |  | Includes onboarding screens, product grid, and checkout flow... [Show More]  |
+                    |  |                                                                              |
+                    |  | [ View Project Details & Public Q&A ]              [ 📩 Send Proposal ]     |
+                    |  +------------------------------------------------------------------------------+
+                    |
+=====================================================================================================
